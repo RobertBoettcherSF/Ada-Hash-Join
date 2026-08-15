@@ -18,7 +18,8 @@ package body Hash_Join is
      (Key_Type        => Key_Type,
       Element_Type    => Left_Tuple_Lists.Vector,
       Hash            => Hash_Key,
-      Equivalent_Keys => "=");
+      Equivalent_Keys => "=",
+      "="             => Left_Tuple_Lists."=");
 
    -- Partition Hash Helper (Returns 0 to Num_Partitions - 1)
    function Get_Partition (K : Key_Type; Num_Partitions : Natural) return Natural is
